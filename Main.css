@@ -1,31 +1,61 @@
 body{
     margin: auto;
-    background-color: #eaeded;
+    background:var(--tertiary-color);
+    color: black;
 }
+
+/* Dark mode & Light mode */
+
+
+:root{
+    --primary-color:  white;
+    --secondary-color: #121010;
+    --tertiary-color: #eaeded;
+    --offer-color: #1e6750;
+    --slider-color: #d2e9e9;
+    
+}
+.dark-theme{
+    --primary-color:  #121010;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --offer-color: #edd656;
+    --slider-color: black;
+    
+   
+    
+}
+#moon{
+    width: 35px;
+    margin-left: 1195px;
+    margin-top: -11px;
+    cursor: pointer;
+}
+/* Dark mode & Light mode */
+
 /* <!-- ...........Header......... --> */
 header{
     
     height: 65px;
     background-color: #131921;
+    position: relative;
   
 }
 #container{
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     display: block;
-    background-color: #131921;
+    background:var(--secondary-color);
+    
 }
 /* <!-- ...........Header......... --> */
 
 /* <!-- ...........Header Menu......... --> */
 #header-menu{
-
-    
-    height: 44px;
+    height: 50px;
     background-color: #232f3e; 
-    position: sticky;
-   
+    position: relative;  
 }
 #logo img{
     width: 147px;
@@ -65,6 +95,7 @@ header{
     height: 47px;
     float: left;
     float: left;
+    
    
 }
 #search1{
@@ -109,7 +140,7 @@ header{
 }
 .return{
     margin-top: 13px;
-    margin-left: 163px;
+    margin-left: 180px;
     display: inline-block;
     position: absolute;
     
@@ -117,6 +148,7 @@ header{
 }
 .return span{
     color: white;
+    text-decoration:underline #131921;
     
 }
 .return:hover{
@@ -131,41 +163,66 @@ header{
     margin-top: 8px;
 }
 
-.toggle{
-    
-    margin-top: 2px;
-    margin-left: 14px;
-  position: absolute; 
-    
-}
-.toggle button{
-    background-color: #232f3e;
-    color: white;
+/* The sidepanel menu */
+.sidepanel {
+    height: 750px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
     font-size: 25px;
-    border: none;
-        
-}
-.toggle button:hover{
-    background-color: #232f3e;
-    color: rgb(1, 22, 10);
-       
-}
-#tog{
-    color: white;
-    margin-left: 48px;
-    margin-top: 13px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
     position: absolute;
-    
-    
-}
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
 
 ul {
     list-style-type: none;
-    margin-left: 70px;
+    margin-left: 80px;
     padding: 0;
     overflow: hidden;
     position: absolute;
-    margin-top: 3px;
+    margin-top: -47px;
+    gap:15px;
     
   }
   
@@ -193,32 +250,35 @@ ul {
 
 /* <!-- ...........Main menu......... --> */
 #main-menu{
-    /* border: 3px rgb(10, 10, 10) solid; */
-    height: 650px;
-    width: 100%;
     margin-left: 0%;
-    background-image: url(Images/Main-image.jpg);
-    background-repeat: no-repeat;
+    margin-top: 0px;
+    /* border: 3px rgb(10, 10, 10) solid; */
+    
+  
+    /* background-image: url(Images/Main-image.jpg); */
+    /* background-repeat: no-repeat; */
     /* background-size: cover; */
-    background-size: 100% 650px;
-    
-    
-
 }
 
 .Main_Menu1{
     height: 435px;
     width: 24%;
     margin-left: 0.8%;
-    margin-top: 19%;
+    margin-top: -23%;
+    position: relative;
     /* border: #c61508 solid 2px; */
     float: left;
-    background-color: white;  
+    background:var(--primary-color); 
+        
 }
 
 .Main_Menu1 h2{
     margin-left: 10px;
     margin-top: 5px;
+    font-size:20px;
+    font-weight: bold;
+    color:var(--secondary-color); 
+
 }
 .Sub_Menu1{
     /* border: #232f3e solid 1px; */
@@ -236,12 +296,14 @@ ul {
 }
 .Sub_Menu1 h5{
     margin-top: 3px;
+    font-size: medium;
+    color: var(--secondary-color);
 }
 .Main_Menu1 a {
     line-height: 30px;
     margin-left: 10px;
     font-weight: bold;
-    color: rgb(8, 107, 74);
+    color:var(--offer-color);
     text-decoration: none;
 }
 
@@ -260,7 +322,7 @@ ul {
     line-height: 10px;
     margin-left: 10px;
     font-weight: bold;
-    color: rgb(179, 12, 123);
+    color:var(--offer-color);
     text-decoration: none;
 }
 
@@ -283,26 +345,119 @@ ul {
     margin-top: 1%;
     /* border: #c61508 solid 2px; */
     float: left;
-    background-color: white;  
+    background:var(--primary-color);  
 }
 /* <!-- ...........Main Section-1......... --> */
 
 
  /* <!-- ...........Main Section-2......... --> */
  #main-section2{
-    border: 3px rgb(75, 82, 16) solid;
+    border: 0px rgb(75, 82, 16) solid;
     height: 300px;
-    width: 92%;
-    margin-left: 4%;
+    width: 98%;
+    margin-left: 1%;
     margin-top: 1%;
  }
 /* <!-- ...........Main Section-2......... --> */
 
+/* Product Slider carousel */
+#carousel-row {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background:var(--slider-color);
+    padding-top: 60px;
+    margin-left: 0%;
+}
+
+#carousel-row-title {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: clamp(0.2rem, 4vw, 1.1rem);
+    font-weight: bold;
+    color:var(--offer-color)
+}
+
+#carousel-row-title>a {
+    text-decoration: none;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+    color:rgb(144, 209, 24);
+}
+#carousel-col {
+    position: relative;
+    border-bottom: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    background: white;
+}
+#carousel-link {
+    position: relative;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 230px;
+    padding: 8% 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+#carousel-link>.image {
+    height: 80%;
+    width: 100%;
+    background: url(https://i.ibb.co/bz88MTM/1.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#carousel-link>span {
+    margin-left: 10px;
+    font-size:medium;
+    text-align: center;
+
+}
+.image-two {
+    background: url(https://i.ibb.co/88Ssr8G/2.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url(https://img.icons8.com/ios-filled/70/000000/chevron-right.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(https://img.icons8.com/ios-filled/70/000000/chevron-left.png);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 3rem;
+    margin-top: 2100px;
+}
+/* End of product slider carouse */
+
+/* Product page */
+#main-section3{
+    /* border: 3px rgb(32, 11, 150) solid; */
+    height: 100px;
+    width: 100%;
+    margin-top: 365px;
+}
+/* End Product page  */
 
 /* <!-- ...........Footer section......... --> */
 footer{
     
     height: 300px;
-    background-color: #131a22;
+    
+}
+.backBg{
+    background: var(--tertiary-color);
 }
 /* <!-- ...........Footer section......... --> */

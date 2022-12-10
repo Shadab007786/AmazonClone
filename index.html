@@ -1,15 +1,18 @@
 <html>
     <head>
         <title>Amazon Clone</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="Main.css">
         <link href="Images/Amazon_icon.png" rel="icon">
-
-      
+        <script src="home.js"></script>   
     </head>
+
     <body>
         <!-- ...........Header section......... -->
-        <header>
-            <div id="container">
+        <header class="sticky-top sticky-sm-top sticky-md-top sticky-lg-top sticky-xl-top">
+            <div id="container" >
                 <div id="logo">
                     <a href="#"><img src="Images/Amazon-logo.png" alt=""></a>
                 </div>
@@ -57,11 +60,8 @@
                 <span>& Orders</span></a>
                 </div>
 
-                <div class="cart">
-                    
-                    <div><a href="#"><img src="Images/cart.JPG" alt="cart image"></a></div>
-                    
-                  
+                <div class="cart">                   
+                    <div><a href="#"><img src="Images/cart.JPG" alt="cart image"></a></div>                  
                 </div>
                 
                 </div>
@@ -69,14 +69,22 @@
         </header>
 
         <!-- ...........Header Menu......... -->
-        <div id="header-menu">
-            <DIV class="toggle"><button>&#9776</button></DIV>
-            <span id="tog">All</span>
-            
+        
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <div id="header-menu"> 
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                 
+           
             <ul>
                 <li><a href="#">Sell</a></li>
                 <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Today's Deals</a></li>
+                <li><a href="">Today's Deals</a></li>
                 <li><a href="#">Mobiles</a></li>
                 <li><a href="#">Customer Service</a></li>
                 <li><a href="#">Electronics</a></li>
@@ -85,16 +93,44 @@
                 <li><a href="#">Fashion</a></li>
                 <li><a href="#">Prime</a></li>
                 <li><a href="#">New Releases</a></li>
-                <a href="#"><img src="Images/app.JPG" alt="download app image"></a>
-              </ul>
-              
-           
-                    
+                
+              </ul> 
+              <img src="Images/moon.png" alt="moon" id="moon">      
         </div>
 
+        
+        
         <!-- ...........Main menu......... -->
+        <div id="main-menu"> 
+            <!--carousel-->
+  <div id="carousel-container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <a href="#"><img src="Images/caraousal2.jpg" class="d-block w-100"
+              alt="Mobile & Accessories"></a>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <a href="#"><img src="Images/caraousal3.jpg" class="d-block w-100"
+              alt="Computers and accessories"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="Images/caraousal4.jpg" class="d-block w-100"
+              alt="Prime"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="Images/caraousal5.jpg" class="d-block w-100"
+              alt="Home Electronics"></a>
+        </div>
+  
+      </div>
 
-        <div id="main-menu">
+    </div>
+  </div>
+  <!--/Carousel-->
+        </div>
+                    
+        <div >          
             <div class="Main_Menu1">
                     <h2>Starting ₹199 | Men's fashion</h2>
                 <div class="Sub_Menu1">
@@ -152,6 +188,8 @@
                 <a href="" id="sub">See all offer</a>
             </div>  
         </div>
+        
+
         <!-- ...........Main Section-1......... -->
 
         <div id="main-section1">
@@ -216,18 +254,272 @@
         </div>
          <!-- ...........Main Section-2......... -->
 
-         <div id="main-section2"></div>
+         <div id="main-section2">
+            <!-- carousel product slider -->
 
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="carousel-row" class="row">
+                <div id="carousel-row-title">
+                  <span>Today's Deals</span>
+                  
+                </div>
+                <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                    <a id="carousel-link" href="">
+                      <div class="image image-one"></div>
+                      <span>&#8377;2,000 - &#8377;4,000 </span>
+                    </a>
+                  </div>
+                  <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                    <a id="carousel-link" href="">
+                      <div class="image image-two"></div>
+                      <span>&#8377;799.0 - &#8377;1,199.0</span>
+                    </a>
+                  </div>
+                  <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                    <a id="carousel-link" href="">
+                      <div class="image image-two"></div>
+                      <span>&#8377;799.0 - &#8377;1,199.0</span>
+                    </a>
+                  </div>
+                  <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                    <a id="carousel-link" href="">
+                      <div class="image image-two"></div>
+                      <span>&#8377;799.0 - &#8377;1,199.0</span>
+                    </a>
+                  </div>
+                  </div>
+                  </div>
 
+                  <!-- Next slide item -->
+
+                  <div class="carousel-item">
+                    <div id="carousel-row" class="row">
+                        <div id="carousel-row-title">
+                          <span>Today's Deals</span>
+                          
+                        </div>
+                        <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                            <a id="carousel-link" href="">
+                              <div class="image image-one"></div>
+                              <span>&#8377;2,000 - &#8377;4,000 </span>
+                            </a>
+                          </div>
+                          <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                            <a id="carousel-link" href="">
+                              <div class="image image-two"></div>
+                              <span>&#8377;799.0 - &#8377;1,199.0</span>
+                            </a>
+                          </div>
+                          <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                            <a id="carousel-link" href="">
+                              <div class="image image-two"></div>
+                              <span>&#8377;799.0 - &#8377;1,199.0</span>
+                            </a>
+                          </div>
+                          <div id="carousel-col" class="col-6 col-md-6 col-lg-3">
+                            <a id="carousel-link" href="">
+                              <div class="image image-two"></div>
+                              <span>&#8377;799.0 - &#8377;1,199.0</span>
+                            </a>
+                          </div>
+                        </div>
+                </div>
+         </div>
+     </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- End of Carousel -->
+         </div>
+         <!-- End of main Section-2 -->
+
+         <!-- Product list  -->
+         
+         <div id="main-section3">
+            <div class="Main_Menu1">
+                <h2>Extra happiness days</h2>
+                <div class="Sub_Menu-3">
+                    <a href=""><img src="Images/product1.jpg" alt="Deals of the day"/></a>
+                   
+                </div>
+                <a href="" id="sub">See all offer</a>
+            </div>
+        <div class="Main_Menu1">
+            <h2>Professional tools & more</h2>
+            <div class="Sub_Menu-3">
+                <a href=""><img src="Images/product2.jpg" alt="offer image"/></a>
+               
+            </div>
+            <a href="" id="sub">See all offer</a>
+        </div>  
+        <div class="Main_Menu1">
+            <h2>Save up to 15% on daily essentials</h2>
+            <div class="Sub_Menu-3">
+                <a href=""><img src="Images/product3.jpg" alt="Deals of the day"/></a>
+               
+            </div>
+            <a href="" id="sub">See all offer</a>
+        </div>
+        <div class="Main_Menu1">
+            <h2>Up to 60% off | Fitness essentials</h2>
+            <div class="Sub_Menu-3">
+                <a href=""><img src="Images/product4.jpg" alt="Deals of the day"/></a>
+               
+            </div>
+            <a href="" id="sub">See all offer</a>
+        </div>
+        
+
+        </div>
+         <!-- Product List -->
 
 
 
 
         <!-- ...........Footer section......... -->
-        <footer></footer>
+        <footer>
+            <!-- Footer -->
+<footer class="text-center text-lg-start text-muted backBg">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+          
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="">Amazon Clone</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+        </footer>
 
 
 
-        
+        <script>
+         var moon = document.getElementById("moon");
+    moon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        moon.src="Images/sun.png";
+    }
+    else{
+        moon.src="Images/moon.png";
+    }
+}   
+        </script>
     </body>
 </html>
