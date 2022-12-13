@@ -4,9 +4,39 @@ body{
     color: black;
 }
 
+/* * coupon code CSS*/ 
+ #coupon {
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    z-index: 100;
+    margin-top: 4%;        
+    visibility: none;
+    box-shadow: 8px 8px 64px #d309ee, -8px -8px 64px #62606067;
+    background: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(7px);           
+}      
+    #coupon img{
+    height: 600px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33%;
+}        
+    #coupon button {
+    font-size: 30px;
+    width: 40px;
+    z-index: 100;
+    position: absolute;
+    background-color: #297473;
+    cursor: pointer;
+    border-radius: 20%;
+    margin-left: 1036px;
+}
+/* End of Coupon code */
+
 /* Dark mode & Light mode */
-
-
 :root{
     --primary-color:  white;
     --secondary-color: #121010;
@@ -20,10 +50,7 @@ body{
     --secondary-color: white;
     --tertiary-color: black;
     --offer-color: #edd656;
-    --slider-color: black;
-    
-   
-    
+    --slider-color: black;   
 }
 #moon{
     width: 35px;
@@ -45,9 +72,7 @@ header{
     position: relative;
     top: 0;
     width: 100%;
-    display: block;
-    background:var(--secondary-color);
-    
+    background:var(--secondary-color); 
 }
 /* <!-- ...........Header......... --> */
 
@@ -55,7 +80,7 @@ header{
 #header-menu{
     height: 50px;
     background-color: #232f3e; 
-    position: relative;  
+    position:relative; 
 }
 #logo img{
     width: 147px;
@@ -222,7 +247,7 @@ ul {
     overflow: hidden;
     position: absolute;
     margin-top: -47px;
-    gap:15px;
+    
     
   }
   
@@ -364,7 +389,7 @@ ul {
 #carousel-row {
     position: relative;
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
     background:var(--slider-color);
     padding-top: 60px;
     margin-left: 0%;
@@ -418,13 +443,43 @@ ul {
     margin-left: 10px;
     font-size:medium;
     text-align: center;
-
 }
 .image-two {
     background: url(https://i.ibb.co/88Ssr8G/2.jpg) no-repeat !important;
     background-size: contain !important;
     background-position: center !important;
 }
+.image-three {
+    background: url(https://i.ibb.co/SB34mMX/3.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.image-four {
+    background: url(https://i.ibb.co/x37NQW6/4.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.image-five {
+    background: url(https://i.ibb.co/W2BssPF/5.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.image-six {
+    background: url(https://i.ibb.co/cFgrrbs/6.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.image-seven {
+    background: url(https://i.ibb.co/ngCdkt5/7.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.image-eight {
+    background: url(https://i.ibb.co/PFTYXG1/8.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+
 
 .carousel-control-next-icon {
     background-image: url(https://img.icons8.com/ios-filled/70/000000/chevron-right.png);
