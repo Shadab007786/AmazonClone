@@ -1,0 +1,445 @@
+/* -------------------HEADER SECTION MEDIA QUERY--------------------- */
+
+@media screen and (max-width:1108px){
+    #logo img{
+    margin-left: 0px;
+        }
+    }
+@media screen and (max-width:816px){
+    #logo img{
+        width: 95px;
+    }
+}
+@media screen and (max-width:581px){
+    #logo img{
+        width: 77px;}
+}
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width:1503px){
+    #search1{
+        width: 408%;
+    }
+}
+@media screen and (max-width:1502px){
+    #search1{
+        width: 408%;
+    }
+}
+@media screen and (max-width:1381px){
+    #search1{
+        width: 379%;
+    }
+}
+@media screen and (max-width:1327px){
+    #search1{
+        width: 379%;
+    }
+}
+@media screen and (max-width:1309px){
+    #search1{
+        width: 300%;
+    }
+}
+@media screen and (max-width:1107px){
+    #search1{
+        width: 233%;
+    }
+}
+/* ---------------------------------------------------------- */
+@media screen and (max-width:816px){
+#dropdown{
+    width: 21px;
+}
+}
+@media screen and (max-width:581px){
+    #dropdown{
+    margin-left: -3px;
+    width: 20px;
+    }
+}
+/* ---------------------------------------------------- */
+
+@media screen and (max-width:1503px){
+    #sicon input{
+        margin-left: 456px;
+    }
+}
+@media screen and (max-width:1502px){
+    #sicon input{
+        margin-left: 456px;
+    }
+}
+@media screen and (max-width:1411px){
+    #sicon input{
+        margin-left: 380px;
+    }
+}
+@media screen and (max-width:1411px){
+    #sicon input{
+        margin-left: 364px;
+    }
+}
+@media screen and (max-width:1309px){
+    #sicon input{
+        margin-left: 258px;
+    }
+}
+@media screen and (max-width:1191px){
+    #sicon input{
+        margin-left: 182px;
+    }
+}
+@media screen and (max-width:1107px){
+    #sicon input{
+        margin-left: 93px;
+    }
+}
+@media screen and (max-width:677px){
+    #sicon input{
+        margin-left: 36px;
+    }
+}
+@media screen and (max-width:581px){
+    #sicon input{
+        margin-top: 11px;
+    }
+}
+/* ----------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+@media screen and (max-width:997px){
+    #map img {
+        margin-left: -10px;
+        width: 133px;
+    }
+
+}
+@media screen and (max-width:816px){
+    #map img {
+        margin-left: -6px;
+        width: 108px;
+    }
+
+}
+@media screen and (max-width:581px){
+#map img{
+    margin-left: -15px;
+    width: 94px;
+}
+}
+/* --------------------------------------------------------------- */
+@media screen and (max-width:947px){
+    #flag {
+        margin-left: 5px;
+        width: 20px;
+    }
+
+}
+/* -------------------------------------------------------------------- */
+@media screen and (max-width:525px){
+#flagselect{
+    width: 18px;
+    height: 21px;
+    margin-left: -1px;
+    margin-top: 22px;
+    float: left;
+}}
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width:947px){
+.hello {
+
+    margin-left: 7px;
+    margin-top: 7px;
+    }
+}
+@media screen and (max-width:677px){
+.hello{
+    margin-left: 4px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+}
+@media screen and (max-width:525px){
+    .hello select{
+        font-size: 6px;
+    }}
+
+/* --------------------------------------------------------------------- */
+@media screen and (max-width:677px){
+    .return{
+        margin-top: 16px;
+        margin-left: 167px;
+        font-size: 12px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width:947px){
+.return span {
+    margin-left: -17px;
+}
+}
+@media screen and (max-width:896px){
+    .return span {
+       
+        margin-left: -75px;
+        margin-top: 6px;
+        }
+    }
+
+@media screen and (max-width:896px){
+        select{
+            font-size: 9px;
+        }}
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width:947px){
+    .cart{
+        margin-left: 210px;
+    }
+    }
+@media screen and (max-width:896px){
+        .cart{
+            margin-top: -35px;
+        }
+        }
+@media screen and (max-width:816px){
+    .cart{
+        margin-top:11px;
+        margin-left: 152px;
+    }
+
+}
+@media screen and (max-width:710px){
+    .cart{
+        margin-top:11px;
+        margin-left: 152px;
+        width: 0px;
+    }
+
+}
+@media screen and (max-width:677px){
+    .cart{
+        margin-top: 10px;
+        margin-left: 123px;
+    }
+}
+ /* --------------------HEADER SECTION COMPLETE--------------------------------    */
+
+ /* ----------------------------MAIN MENU 1--------------------- */
+ @media screen and (max-width:1454px){
+ #weather{
+    margin-left: 17px;
+ }
+ }
+ @media screen and (max-width:1372px){
+    #weather{
+       margin-left: 1px;
+    }
+    }
+@media screen and (max-width:1309px){
+        #weather{
+           margin-left: -11px;
+     }
+ }
+@media screen and (max-width:1262px){
+            #weather{
+               margin-left: 7px;
+               width: 300px;
+    }
+}
+@media screen and (max-width:1215px){
+                #weather{
+                   margin-left: 20px;
+                   width: 250px;
+                   margin-top: -110;
+                   
+    }
+ }
+ @media screen and (max-width:1077px){
+ #Main_Menu1_Media{
+    width: 45%;
+    margin-left: 3%;
+    margin-top: -240px;
+    position: sticky;
+ }
+ }
+ @media screen and (max-width:900px){
+    #Main_Menu1_Media{
+       width: 45%;
+       margin-left: 3%;
+       margin-top: -140px;
+       position: sticky;
+    }
+    }
+@media screen and (max-width:582px){
+        #Main_Menu1_Media{
+           width: 46%;
+           margin-top: -120px;
+           
+        }
+        }
+ @media screen and (max-width:1077px){
+    #Main_Menu1_Media2{
+       width: 45%;
+       margin-left: 3%;
+       margin-top: 14px;
+    }
+    }
+ @media screen and (max-width:1077px){
+        .Main_Menu1_Media3{
+           width: 45%;
+           margin-top:20px;
+           margin-left: 3%;
+        }
+        }
+ @media screen and (max-width:1077px){
+            .Main_Menu1_Media4{
+               margin-left: 119px;
+               margin-top: 121px;
+               float: left;
+            }
+            }
+@media screen and (max-width:765px){
+                .Main_Menu1_Media4{
+                    margin-left: 36px;
+                    margin-top: 136px;
+                    float: left;
+                    height: 170px
+                }
+                }
+@media screen and (max-width:605px){
+                    .Main_Menu1_Media4{
+                        margin-left: -1px;
+                        margin-top: 136px;
+                        float: left;
+                        height: 170px
+                    }
+                    }
+ @media screen and (max-width:534px){
+                        .Main_Menu1_Media4{
+                            margin-left: -11px;
+                            margin-top: 125px;
+                            float: left;
+                            height: 170px
+                        }
+                        }
+/* ------------------------------SignIn Button----------------------------- */
+@media screen and (max-width:1077px){
+    .signbtn{
+    width: 401px;
+    margin-left: 39px;
+    }
+   }
+@media screen and (max-width:720px){
+    .signbtn{
+    width: 203px;
+    margin-left: 48px;
+    }
+   }
+@media screen and (max-width:855px){
+    .signbtn{
+    width: 269px;
+    margin-left: 48px;
+    }
+   }
+@media screen and (max-width:995px){
+    .signbtn{
+    width: 342px;
+    margin-left: 39px;
+    }
+   }
+@media screen and (max-width:1077px){
+    .signbtn{
+    width: 437px;
+    margin-left: 16px;
+    }
+   }
+@media screen and (max-width:1147px){
+    .signbtn{
+    width: 244px;
+    margin-left: 11px;
+    }
+   }
+@media screen and (max-width:1261px){
+    .signbtn{
+    width: 220px;
+    margin-left: 2px;
+    }
+   }
+@media screen and (max-width:1326px){
+    .signbtn{
+    width: 280px;
+    margin-left: 4px;
+    }
+   }
+@media screen and (max-width:1436px){
+    .signbtn{
+    width: 280px;
+    margin-left: 15px;
+    }
+   }
+@media screen and (max-width:1215px){
+         .signbtn{
+         width: 280px;
+         margin-left: 3px;
+         }
+        }
+/* ------------------------------SignIn Button----------------------------- */
+
+/* --------------------MAIN SECTION 1 MEDIA QUERY----------------------------------------------- */
+@media screen and (max-width:1539px){
+#main-section1{
+    width: 98%;
+}
+}
+@media screen and (max-width:1099px){
+    #main-section1{
+        width: 98%;
+    }
+    }
+@media screen and (max-width:1099px){
+    #main-section1 .Main_Menu1{
+        width: 25%;
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:1077px){
+    #main-section1 .Main_Menu1{
+        width: 45%;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:1077px){
+    #main-section1 .Main_Menu1 {
+        float: right;
+    }}
+@media screen and (max-width:843px){
+#main-section1 .Main_Menu1 {
+    float: right;
+}}
+
+/* ---------------------------------------------------------------- */
+
+/* Main Section 3 Main Menu 1 */
+@media screen and (max-width:1077px){
+#main-section3 .Main_Menu1 {
+    width: 44%;
+    margin-top: 29%;
+    margin-left: 50px;
+}
+}
+@media screen and (max-width:991px){
+    #main-section3 .Main_Menu1 {
+        width: 44%;
+        margin-top: 56%;
+        margin-left: 50px;
+    }
+    }
+    @media screen and (max-width:1077px){
+        #sub-main{
+        margin-top: -11%
+    }}
+/* Main Section 3 Main Menu 1 */

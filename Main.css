@@ -74,6 +74,7 @@ header{
     width: 100%;
     background:var(--secondary-color); 
 }
+
 /* <!-- ...........Header......... --> */
 
 /* <!-- ...........Header Menu......... --> */
@@ -119,7 +120,7 @@ header{
     width: 10%;
     height: 47px;
     float: left;
-    float: left;
+    
     
    
 }
@@ -129,6 +130,7 @@ header{
     margin-top: 10px;
     float: left;
 }
+
 #sicon input{
     margin-left: 539px;
     margin-top: 10px;
@@ -295,6 +297,32 @@ ul {
     float: left;
     background:var(--primary-color); 
         
+}
+#signin{
+    height: 150px;
+    
+}
+  
+.loginheading{
+    text-align: center;
+}
+.signbtn{
+    width: 300px;
+    margin-left: 40px;
+}
+#weather{
+    height: 250px;
+    margin-top: -201px;
+    width: 330px;
+    text-align: center;
+    margin-left: 38px;
+    position: relative;
+    
+}
+.weatherimg{
+    font-size: 100px;
+    color: #747311;
+    margin-left: 12px;
 }
 
 .Main_Menu1 h2{
